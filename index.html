@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas Pemrosesan Data</title>
 </head>
 <body>
     <form action="http://localhost/tugaspemrosesandata/proses.php" method="get">
@@ -18,31 +18,6 @@
      
      <input type="submit" name="submit" value="Hitung">
     </form>
-<?php
-if ($_GET):
-    $bilangan1 = $_GET['bilangan1'];
-    $bilangan2 = $_GET['bilangan2'];
-    $operasi = $_GET['operasi'];
-    
-    switch ($operasi) {
-        case 'tambah':
-            $hasil = $bilangan1 + $bilangan2;
-            break;
-        case 'kurang':
-            $hasil = $bilangan1 - $bilangan2;
-            break;
-        case 'kali':
-            $hasil = $bilangan1 * $bilangan2;
-            break;
-        case 'bagi':
-            $hasil = $bilangan1 / $bilangan2;
-            break;
-    }
- ?>
-       <br>
-        Hasil: <strong><?php echo $hasil ?></strong>
-      
-        <?php
-    endif; ?>
+
 </body>
 </html>
